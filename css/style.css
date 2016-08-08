@@ -1,0 +1,371 @@
+/*-----------------------------------General CSS------------------------------*/
+@font-face{
+  font-family: "opensans";
+  src: url("../media/fonts/opensans.ttf");
+}
+
+@font-face{
+  font-family: "estandar";
+  src: url("../media/fonts/estandar.ttf");
+}
+
+@font-face{
+	font-family: "roboto";
+	src: url("../media/fonts/roboto.ttf");
+}
+
+body{
+  background-image: url("../media/pictures/background.png");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 960px;
+  margin: auto;
+  text-align: center;
+}
+
+.header, h1, h2 ,h3{
+	font-family: "roboto";
+}
+
+.navbar{
+  margin-right: -1px;
+}
+
+.navbar>ul{
+  list-style: none;
+  display: inline-block;
+  background-color: #FFF;
+  padding: 0 0;
+  border-radius: 10px;
+}
+
+.navbar>ul>li{
+  float: left;
+}
+
+.navbar>ul>li>a{
+  display: block;
+  font-size: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #000;
+}
+/*background-color: #9C674B;*/
+.navbar>ul>li>.active{
+  background-color: #9C674B;
+  border-radius: 5px;
+}
+
+.navbar>ul>li>a:visited{
+  color: #000;
+}
+
+.navbar>ul>li>.not-active:hover{
+  color: #9C674B;
+  opacity: 0.7;
+}
+
+.navbar>ul>li>.active:hover{
+  background-color: #895943;
+}
+
+.content{
+  width: 700px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #FFF;
+  padding: 15px;
+  margin: 30px 0;
+}
+
+.footer p{
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+}
+
+.back-to-top a{
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 0;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.back-to-top a:visited{
+  color: #000;
+}
+
+.back-to-top a:hover{
+  opacity: 0.7;
+  color: #9C674B;
+  border: 1px solid #9C674B;
+}
+
+h1{
+  padding: 0;
+  margin: 30px;
+}
+/*----------------------------------------------------------------------------*/
+/*---------------------------------Index CSS----------------------------------*/
+.selected-music{
+	font-family: "estandar";
+	display: block;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.selected-album-covers{
+	width: 300px;
+	height: 300px;
+}
+
+.div-selected-songs{
+	display: inline-block;
+}
+
+#news-article{
+  font-family: "estandar";
+  display: inline-block;
+}
+
+#news-article img{
+  width: 300px;
+  height: 200px;
+}
+
+#news-article #news-text-1{
+  font-size: 17px;
+  float: left;
+  margin-left: 80px;
+}
+
+#news-article #news-text-2{
+  font-size: 17px;
+  float: right;
+  margin-right: 81px;
+}
+
+#news-article a:hover{
+  opacity: 0.8;
+}
+/*----------------------------------------------------------------------------*/
+/*-----------------------------------Bio CSS----------------------------------*/
+.bio-paragraph{
+  padding: 10px;
+  border-radius: 20px;
+  border: 7px solid #9C674B;
+  text-align: left;
+  font-family: "opensans";
+  background-color: #E0E0E0;
+}
+
+.bio-paragraph li{
+  padding: 7px 0;
+}
+/*----------------------------------------------------------------------------*/
+/*---------------------------------Music CSS----------------------------------*/
+.album-covers{
+  width: 200px;
+  height: 200px;
+  float: left;
+  border-radius: 10px;
+  margin-left: 1px;
+  margin-right: 3px;
+}
+
+.album-list{
+  font-family: "estandar";
+  font-size: 15px;
+  height: 200px;
+  width: 245px;
+  display: inline-block;
+  text-align: left;
+  float: left;
+  border-radius: 10px;
+  background-color: #DDD;
+  margin-right: 3px;
+}
+
+.album-list ul{
+  list-style-type: circle;
+}
+
+.hidden-text{
+  visibility: hidden;
+}
+
+#music-lyrics{
+  font-family: "opensans";
+  border: 3px solid #9C674B;
+  border-radius: 10px;
+  padding: 10px 80px;
+}
+
+#music-lyrics p{
+  background:radial-gradient(#DDD, #FFF);
+}
+
+video{
+  width: 470px;
+  height: 313px;
+}
+/*----------------------------------------------------------------------------*/
+/*---------------------------------Gallery CSS--------------------------------*/
+.gallery-image{
+  width: 670px;
+  height: auto;
+}
+
+#gallery a:hover{
+  opacity: 0.8;
+}
+/*----------------------------------------------------------------------------*/
+/*---------------------------------Events CSS---------------------------------*/
+.share img{
+	height: 30px;
+	width: auto;
+  float: right;
+  padding: 0 2px;
+}
+
+.share #gg{
+	height: 32px;
+	width: auto;
+  margin-right: 22px;
+}
+
+.share a img:hover{
+  opacity: 0.7;
+}
+
+.event-list{
+	float: left;
+	display: inline-block;
+	height: 30px;
+}
+
+.event-list ol{
+	display: inline-block;
+	padding: 0;
+}
+
+.event-list ol li{
+	display: inline;
+	width: 140px;
+	float: left;
+  font-family: "estandar";
+  padding: 0;
+}
+
+.event-header{
+	border-bottom: 3px solid #000;
+	padding-bottom: 5px;
+}
+
+.event-even ol li{
+	background-color: #DDD;
+}
+
+.event-list a:hover{
+	opacity: 0.7;
+}
+
+.event-list a{
+	text-decoration:none;
+	color: #9C674B;
+}
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------Store CSS---------------------------------*/
+figure{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+.store-form .submit-button{
+  float: right;
+  display: block;
+  text-align: right;
+  padding-right: 5%;
+}
+
+.submit-button input{
+  background-color: #9C674B;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.submit-button input:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.store-form h1{
+  font-family: "estandar";
+}
+
+.item-window{
+  display: inline-block;
+  border: 1px solid #9C674B;
+}
+
+.item-window img{
+  width: 200px;
+  padding: 5px;
+}
+
+.item-window input, .item-window select{
+  margin: 5px;
+  cursor: pointer;
+}
+
+.item-window img:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*---------------------------------Checkout CSS-------------------------------*/
+.checkout-info-box{
+  display: inline-block;
+  padding: 15px;
+  padding-bottom: 30px;
+}
+
+.purchase-button{
+   position: relative;
+   top: 40px;
+   margin-right: 330px;
+ }
+
+.banking-box fieldset{
+
+}
+
+fieldset .ltitle{
+  float: left;
+}
+
+.checkout-info-box input{
+  width: 50%;
+  float: right;
+}
+
+.checkout-info-box select{
+  float: right;
+  margin: 2px;
+}
+/*----------------------------------------------------------------------------*/
+/*---------------------------------Result CSS-------------------------------*/
+#result-page{
+  font-family: "estandar";
+}
+/*----------------------------------------------------------------------------*/

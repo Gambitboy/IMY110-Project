@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+	<head>
+		<title>Checkout - Rise Against</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<meta charset="utf-8" />
+		<meta name="author" content="Keaton Roux" />
+	</head>
+	<body>
+		<div class="page">
+			<div class="header">
+				<div class="navbar">
+          <a href="index.html"><img src="media/pictures/logo.png" class="logo" alt="logo of rise against" /></a>
+					<br />
+					<ul>
+						<li><a href="index.html" class="not-active">HOME</a></li>
+						<li><a href="bio.html" class="not-active">BIO</a></li>
+						<li><a href="music.html" class="not-active">MUSIC</a></li>
+						<li><a href="gallery.html" class="not-active">GALLERY</a></li>
+						<li><a href="events.html" class="not-active">EVENTS</a></li>
+						<li><a href="store.html" class="active">STORE</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<form class="" action="result.html" method="post">
+					<div class="submit-button purchase-button"><input type="submit" value="Purchase" /></div>
+					<div class="checkout-info-box banking-box">
+						<fieldset>
+							<legend>Banking Details</legend>
+							<label class="ltitle" for="cardNr">Card Number:</label>
+							<label><input type="text" name="cardNr" id="cardNr" placeholder="4000400040004000" required="required" maxlength="16"/></label><br/><br/>
+
+							<label class="ltitle" for="cardHolder">Card Holder:</label>
+							<label><input type="text" name="cardHolder" id="cardHolder" placeholder="Mr AB C" required="required"/></label><br/><br/>
+
+							<span class="ltitle">Card Epire Date:</span>
+								<select name="EDM">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+								</select>
+
+								<select name="EDY">
+									<option>2020</option>
+									<option>2019</option>
+									<option>2018</option>
+									<option>2017</option>
+									<option>2016</option>
+								</select><br/><br/>
+
+								<label class="ltitle" for="CVV">CVV Number:</label>
+								<label><input type="text" name="CVV" id="CVV" placeholder="111" required="required" maxlength="3"/></label><br/>
+						</fieldset>
+					</div>
+					<div class="checkout-info-box delivery-box">
+						<fieldset>
+							<legend>Delivery Details</legend>
+							<label class="ltitle" for="provice">Province:</label>
+							<label><input type="text" name="provice" id="provice" placeholder="Gauteng" required="required"/></label><br/><br/>
+
+							<label class="ltitle" for="town">Town:</label>
+							<label><input type="text" name="town" id="town" placeholder="Pretoria" required="required"/></label><br/><br/>
+
+							<label class="ltitle" for="district">District:</label>
+							<label><input type="text" name="district" id="district" placeholder="Hatfield" required="required"/></label><br/><br/>
+
+							<label class="ltitle" for="street">Street:</label>
+							<label><input type="text" name="street" id="street" placeholder="Linewood 3" required="required"/></label><br/><br/>
+
+							<label class="ltitle" for="code">Postal Code:</label>
+							<label><input type="text" name="code" id="code" placeholder="0002" required="required" maxlength="4"/></label><br/><br/>
+
+							<label class="ltitle" for="email">Email Address:</label>
+							<label><input type="text" name="email" id="email" placeholder="name@email.com" required="required"/></label><br/>
+						</fieldset>
+					</div>
+				</form>
+			</div>
+			<div class="footer">
+				<p>Copyright (c) 2016 Copyright Holder All Rights Reserved.</p>
+			</div>
+		</div>
+	</body>
+</html>
